@@ -83,3 +83,24 @@ fi
 
 # powerlevel10k configs | To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [ ! -f ~/.p10k.zsh ] || source ~/.p10k.zsh
+
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk"
+
+export HADOOP_HOME=/home/meet/hadoop-3.3.1
+export HADOOP_INSTALL=$HADOOP_HOME
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
+export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
+export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
+
+export SPARK_HOME=~/spark-3.1.2-bin-hadoop3.2/
+export PATH=$PATH:$SPARK_HOME/bin
+
+export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
+
+
+export PYSPARK_PYTHON=python3
+export PATH=$PATH:$JAVA_HOME/jre/bin

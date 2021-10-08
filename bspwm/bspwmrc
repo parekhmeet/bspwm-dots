@@ -21,7 +21,7 @@ dunst --config $HOME/.config/dunst/dunstrc &
 picom --config $HOME/.config/picom/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
-feh --bg-fill "/home/meet/Pictures/Wallpapers/yelloe.jpg"
+feh --bg-fill "/home/meet/Pictures/Wallpapers/flower2.jpg"
 sh $HOME/.config/polybar/launch.sh
 
 xset r rate 250 40
